@@ -10,6 +10,6 @@ class ProjectsController < ApplicationController
     
     @project.update_attributes params[:project]
     
-    redirect_to user_projects_path(current_user, @project)
+    redirect_to user_project_path(current_user, @project)
   end
 end
