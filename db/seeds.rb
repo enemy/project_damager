@@ -8,8 +8,14 @@
 
 
 quentin = User.create :username => "quentin"
+aaron = User.create :username => "aaron"
 
-project = quentin.projects.create :name => "My first project"
-project.tasks.create :name => "Task 1"
-project.tasks.create :name => "Task 2"
+project = quentin.projects.create :name => "Quentins project"
+project.tasks.create :name => "Quentins Task 1"
+project.tasks.create :name => "Quentins Task 2"
 
+
+project = aaron.projects.create :name => "Arons Secret Project"
+project.tasks.create :name => "Eliminate Quentin"
+project.tasks.create :name => "???"
+project.tasks.create :name => "Profit"

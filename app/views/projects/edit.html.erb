@@ -1,4 +1,4 @@
-<% form_for @project, :url => user_project_path do |project_form| %>
+<%= form_for @project, :url => user_project_path do |project_form| %>
   <div>
     <%= project_form.label :name, 'Project name:' %>
     <%= project_form.text_field :name %>
@@ -6,7 +6,7 @@
 
   <!-- Here we call fields_for on the project_form builder instance.
        The block is called for each member of the tasks collection. -->
-  <% project_form.fields_for :tasks do |task_form| %>
+  <%= project_form.fields_for :tasks do |task_form| %>
       <p>
         <div>
           <%= task_form.label :name, 'Task:' %>

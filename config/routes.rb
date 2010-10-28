@@ -58,10 +58,8 @@ ProjectDamager::Application.routes.draw do
   # match ':controller(/:action(/:id(.:format)))'
 
   resources :users do
-    resources :projects do
-      
-    end
-
+    resources :projects
   end
 
+  root :to => "statics#index"
 end
